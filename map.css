@@ -1,0 +1,118 @@
+body {
+    background:linear-gradient(#854a94,#4162c4);
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 25px;
+}
+
+/* Стили для панели навигации */
+.navbar {
+    width: 100%;
+    background-color: #5a1476; 
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.nav-link {
+    margin: 0 15px;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    font-size: 120%; /* Увеличение ячейки на 20% при наведении */
+    background-color: #c846c8; /* Фиолетовый цвет */
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.main-navigation p{
+    background-color: #591b88; /* Цвет заголовков */
+    color: white;
+    border-radius: 10px; /* Закругленные края */
+    padding: 10px;
+    display:flex;
+    justify-content:center;
+    font-size: 80%;
+    transition: all 0.3s ease; /* Плавный переход */
+
+}
+.main-navigation p:hover {
+    background-color: #c846c8; /* Цвет при наведении */
+    transform: scale(1.2); /* Увеличение на 20% */
+}
+.link{
+    color:aliceblue;
+    text-decoration: none;
+}
+/*Основное*/
+.main-section {
+    display: flex; /* Используем flexbox для размещения элементов */
+    justify-content: space-between; /* space-between разместит элементы по краям */
+    padding: 20px;
+}
+
+.main-navigation {
+    margin-left: 20px;
+    text-align: center;
+    width: 15%;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgba(49, 13, 44, 0.2) !important;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    background-color: #ffffff;
+}
+
+.main-blog {
+    width: 100%;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/*Нижняя часть*/
+footer{
+    background-color: white;
+    border-radius: 10px; /* Закругленные края */
+    padding: 15px; /* Внутренние отступы для футера */
+    text-align: center; /* По центру для текста */
+    font-size: large;
+    justify-content: center;
+    
+}
+.socialset {
+    display: flex; /* Используем flexbox для горизонтального выравнивания иконок */
+    justify-content: center; /* Центрируем иконки */
+    margin-top: 10px; /* Отступ сверху для разделения текста и иконок */
+}
+
+.social-icon {
+    width: 24px; /* Ширина иконок */
+    height: 24px; /* Высота иконок */
+    margin-left: 10px; /* Отступ между иконками */
+    color:#0056b3;
+}
+hr{
+    color:#00000000;
+    margin-top: 60px;
+}

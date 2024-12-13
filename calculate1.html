@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./wave2.png" type="image/x-icon"> <!--Добавляем favicon -->
+    <title>Калькулятор параметров антенны</title>
+    <link rel="stylesheet" href="calculate1.css"> <!-- Подключаем файл CSS -->
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="Workspace.html" class="nav-link">Главная</a>
+        <a href="theory.html" class="nav-link">Теория</a>
+        <a href="map.html" class="nav-link">Карта</a>
+        <a href="calculate.html" class="nav-link">Калькулятор</a>
+    </div>
+    <div class="all-sectors">
+        <div class="calculate1">
+            <h1 id="calculator">Позиционирование в пространстве</h1>
+            <div class="input-group">
+                <label for="long">Координата долготы (градусы):</label>
+                <input type="number" id="long" placeholder="Введите долготу">
+            </div>
+            
+            <div class="input-group">
+                <label for="lat">Координата широты (градусы):</label>
+                <input type="number" id="lat" placeholder="Введите широту">
+            </div>
+            
+            <div class="input-group">
+                <label for="satellite">Точка стояния спутника (градусы):</label>
+                <input type="number" id="satellite" placeholder="Введите точку стояния">
+            </div>
+            
+            <div class="input-group">
+                <label for="frequency">Частота работы антенны (Гц):</label>
+                <input type="number" id="frequency" placeholder="Введите частоту">
+            </div>
+            
+            <div class="input-group">
+                <label for="diameter">Диаметр антенны (м):</label>
+                <input type="number" id="diameter" placeholder="Введите диаметр">
+            </div>
+            <button onclick="calculate()">Рассчитать</button>
+        </div>
+        <div class="V">
+            <div class="result" id="result"></div>
+            <div class="thanks" id="thanks"></div>
+        </div>
+    </div>
+</div>
+   <!-- Нижняя часть -->
+        <hr>
+        <div class="space">
+        </div>
+        <hr>
+        <footer>
+            <div class="info">
+                <p><small>&copy; Благославова Инга, 2024</small></p>
+                <div class="socialset">
+                    <a href="https://vk.com/werteisiz" target="_blank">
+                        <img class="social-icon" src="./pngwing.com (3).png" alt="vk">
+                    </a>
+                    <a href="https://t.me/werteisiz" target="_blank">
+                        <img class="social-icon" src="./pngwing.com (4).png" alt="TG">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <hr>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="functions.js"></script>
+    </div>
+</body>
+</html>

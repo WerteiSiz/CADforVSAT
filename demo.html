@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор параметров антенны</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+<h1>Калькулятор параметров антенны</h1>
+
+<div class="input-group">
+    <label for="long">Координата долготы (градусы):</label>
+    <input type="number" id="long" placeholder="Введите долготу">
+</div>
+
+<div class="input-group">
+    <label for="lat">Координата широты (градусы):</label>
+    <input type="number" id="lat" placeholder="Введите широту">
+</div>
+
+<div class="input-group">
+    <label for="satellite">Точка стояния спутника (градусы):</label>
+    <input type="number" id="satellite" placeholder="Введите точку стояния">
+</div>
+
+<div class="input-group">
+    <label for="frequency">Частота работы антенны (Гц):</label>
+    <input type="number" id="frequency" placeholder="Введите частоту">
+</div>
+
+<div class="input-group">
+    <label for="diameter">Диаметр антенны (м):</label>
+    <input type="number" id="diameter" placeholder="Введите диаметр">
+</div>
+
+<button onclick="calculate()">Рассчитать</button>
+
+<div class="result" id="result"></div>
+<div class="thanks" id="thanks"></div>
+
+<script>
+    function calculate() {
+        const gradys_d = parseFloat(document.getElementById('long').value);
+        const gradys_sh = parseFloat(document.getElementById('lat').value);
+        const tochka = parseFloat(document.getElementById('satellite').value);
+        const chastota = parseFloat(document.getElementById('frequency').value);
+        const diametr = parseFloat(document.getElementById('diameter').value);
+        
+        // Здесь нужно будет реализовать ваши функции по расчету.
+        // Для примера просто выводим предустановленные данные.
+        
+        const angle_of_elevation = 45; // Пример значения
+        const azimuth = 180; // Пример значения
+        const distance = 10000; // Пример значения
+        const signal_loss = 20; // Пример значения
+        const wavelength = 0.04; // Пример значения
+
+        const resultText = `
+            <h2>Результаты:</h2>
+            <p>Угол места: ${angle_of_elevation}°</p>
+            <p>Азимут: ${azimuth}°</p>
+            <p>Наклонная дальность: ${distance} км</p>
+            <p>Потери сигнала: ${signal_loss} дБ</p>
+            <p>Длина волны: ${wavelength} м</p>
+        `;
+
+        document.getElementById("result").innerHTML = resultText;
+        document.getElementById("result").style.display = "block";
+
+        document.getElementById("thanks").innerText = "Спасибо за использование нашего калькулятора!";
+        document.getElementById("thanks").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
